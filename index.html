@@ -80,8 +80,9 @@
         </section>
         <section class="section" id="code">
           <h2 class="section-title">Code-example</h2>
+          <pre>
           <code>
-            <pre>
+            
 public double[] BuildProfileX()
         {
             lines = File.ReadAllLines(path);
@@ -90,7 +91,7 @@ public double[] BuildProfileX()
             X = new double[lines[0].Split('\t').Length];
 
             string[] temp = lines[0].Split('\t');
-            for (int j = 0; j < temp.Length; j++)
+            for (int j = 0; j &lt; temp.Length; j++)
             {
                 X[j] = Double.Parse(temp[j]);
             }
@@ -98,8 +99,9 @@ public double[] BuildProfileX()
             return X;
 
         }
-            </pre>
+            
           </code>
+        </pre>
         </section>
         <section class="section" id="education">
           <h2 class="section-title">Education</h2>
